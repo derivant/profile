@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'Pilowlava';
+  src: url('/Pilowlava-Regular.woff') format('woff'),
+}
+
+body {
+  background:red;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fransu {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  mix-blend-mode: difference;
+  border-radius: 5%;
+}
+
+a {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 140px;
+  text-decoration: none;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: hand;
+  color: black;
+}
+
+h1 {
+  font-family: 'Pilowlava'; Arial, sans-serif;
+  font-size: 52px;
+  text-align: center;
+  line-height: 50px;
+  mix-blend-mode: difference;
+  color:white;
+}
+
+h2 {
+  font-family: 'Pilowlava'; Arial, sans-serif;
+  font-size: 34px;
+  text-align: center;
+  line-height: 32px;
+  mix-blend-mode: difference;
+  color:white;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+  mix-blend-mode: exclusion;
+}
+/*ANIMATIONS*/
+
+.vibrate {
+  -webkit-animation: vibrate-3 0.2s linear infinite both;
+}
+
+.color {
+  -webkit-animation: color-change-5x 1s linear infinite alternate;
+}
+
+.color_text {
+  -webkit-animation: type-change-5x 1s linear infinite alternate-reverse ;
+}
+
+.jello {
+  -webkit-animation: jello-horizontal 0.9s infinite both;
+}
+
+.jello2 {
+  -webkit-animation: jello-horizontal 0.45s infinite both;
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+
+
+@-webkit-keyframes type-change-5x {
+  0% {
+    color: #19dcea;
+  }
+  25% {
+    color: #b22cff;
+  }
+  50% {
+    color: #ea2222;
+  }
+  75% {
+    color: #f5be10;
+  }
+  100% {
+    color: #3bd80d;
+  }
+}
+
+@-webkit-keyframes vibrate-3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+  }
+  20% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  30% {
+    -webkit-transform: translate(-5px, 5px);
+            transform: translate(-5px, 5px);
+  }
+  40% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+  50% {
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+  }
+  60% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  70% {
+    -webkit-transform: translate(-5px, 5px);
+            transform: translate(-5px, 5px);
+  }
+  80% {
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+  }
+  90% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 90vw;
+  }
+
+  h1 {
+  font-family: 'Pilowlava'; Arial, sans-serif;
+  font-size: 42px;
+  text-align: center;
+  line-height: 40px;
+  mix-blend-mode: difference;
+  color:white;
+  }
+
+
+  h2 {
+    font-family: 'Pilowlava'; Arial, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    line-height: 32px;
+    mix-blend-mode: difference;
+    color:white;
+  }
+
+  .fransu {
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
+  mix-blend-mode: difference;
+  border-radius: 5%;
+  }
+
+  p {
+    font-size: 40px;
+    color: white;
+    mix-blend-mode: exclusion;
+  }
+}
